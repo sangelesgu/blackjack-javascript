@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Blackjack</title>
+</head>
+<body>
+  <header class="title">Blackjack</header>
+
+  <section class="row mt-2">
+    <div id="btn-container" class="col text-center">
+      <button id="new-game" class="btn btn-danger">Nuevo Juego</button>
+      <button id="ask-card" class="btn btn-primary">Pedir Carta</button>
+      <button id="stop-game" class="btn btn-primary">Detener</button>
+    </div>
+  </section>
+
+  <section class="row container py-2">
+    <div class="col">
+      <h1>Jugador 1 - <small>0</small> </h1>
+      <div id="player-cards">
+      </div>
+    </div>
+  </section>
+
+  <section class="row container py-2">
+    <div class="col">
+      <h1>PC 1 - <small>0</small> </h1>
+      <div id="pc-cards">
+      </div>
+    </div>
+  </section>
+  <script src="assets/js/underscore-min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
