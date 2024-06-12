@@ -14,27 +14,31 @@
   <section class="row mt-2">
     <div id="btn-container" class="col text-center">
       <button id="new-game" class="btn btn-danger">Nuevo Juego</button>
-      <button id="ask-card" class="btn btn-primary">Pedir Carta</button>
-      <button id="stop-game" class="btn btn-primary">Detener</button>
+      <button id="ask-card"   disabled="disabled" class="btn btn-primary">Pedir Carta</button>
+      <button id="stop-game" disabled="disabled"   class="btn btn-primary">Detener</button>
     </div>
   </section>
 
   <section class="row container py-2">
     <div class="col">
       <h1>Jugador 1 - <small>0</small> </h1>
-      <div id="player-cards">
+      <div id="player-cards" class="cardDiv">
       </div>
     </div>
   </section>
 
   <section class="row container py-2">
     <div class="col">
-      <h1>PC 1 - <small>0</small> </h1>
-      <div id="pc-cards">
+      <h1>PC  - <small>0</small> </h1>
+      <div id="pc-cards" class="cardDiv">
       </div>
     </div>
   </section>
   <script src="assets/js/underscore-min.js"></script>
   <script src="assets/js/app.js"></script>
+
+  <script>
+    blackJack.newGame();
+  </script>
 </body>
 </html>
